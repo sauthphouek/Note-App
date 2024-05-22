@@ -34,7 +34,7 @@ class CreateNoteViewController: UIViewController {
     
     let textAread: UITextField = {
         let textView = UITextField()
-        textView.placeholder = "Note"
+        textView.placeholder = "Description"
         textView.translatesAutoresizingMaskIntoConstraints = false
         // padding left and right
         textView.leftView = UIView(frame: CGRect(x: 0, y: 0, width: 10, height: 46))
@@ -71,7 +71,19 @@ class CreateNoteViewController: UIViewController {
     }
     
     @objc func saveNote() {
-        print("Save")
+        if (titleTextField.text?.isEmpty == false) {
+//            let note = Note()
+//            note.title = titleTextField.text
+//            note.note = textAread.text
+//            note.save()
+            navigationController?.popViewController(animated: true)
+           
+        } else {
+            let alert = UIAlertController(title: "Error", message: "Please enter a title", preferredStyle: .alert)
+            let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
+            alert.addAction(okAction)
+            present(alert, animated: true, completion: nil)
+        }
     }
 
 

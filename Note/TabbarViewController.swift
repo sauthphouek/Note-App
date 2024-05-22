@@ -14,7 +14,17 @@ class TabbarViewController: UITabBarController {
         // Do any additional setup after loading the view.
         setUpTabBar()
         self.tabBar.barTintColor = .systemBackground
-        self.tabBar.backgroundColor = .systemBackground
+        self.tabBar.backgroundColor = .white
+        view.backgroundColor = .systemGray6
+        
+        // top seperator
+        let topBorder = CALayer()
+        topBorder.frame = CGRect(x: 0, y: 0, width: UIScreen.main.bounds.width, height: 1)
+        topBorder.backgroundColor = UIColor.systemGray5.cgColor
+        self.tabBar.layer.addSublayer(topBorder)
+        
+        
+        
 
 
     }

@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		460403E92BFCF88200E34E3B /* NoteModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460403E82BFCF88200E34E3B /* NoteModel.swift */; };
+		460403EC2BFCF9E400E34E3B /* NoteDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460403EB2BFCF9E400E34E3B /* NoteDetailViewController.swift */; };
+		460403F72BFCFBDC00E34E3B /* NoteCellCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 460403F62BFCFBDC00E34E3B /* NoteCellCollectionViewCell.xib */; };
+		460403F82BFCFBDC00E34E3B /* NoteCellCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 460403F52BFCFBDC00E34E3B /* NoteCellCollectionViewCell.swift */; };
 		4679C6EE2BFA4F6A009FCCAF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679C6ED2BFA4F6A009FCCAF /* AppDelegate.swift */; };
 		4679C6F02BFA4F6A009FCCAF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4679C6EF2BFA4F6A009FCCAF /* SceneDelegate.swift */; };
 		4679C6F52BFA4F6A009FCCAF /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 4679C6F42BFA4F6A009FCCAF /* Base */; };
@@ -20,6 +24,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		460403E82BFCF88200E34E3B /* NoteModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteModel.swift; sourceTree = "<group>"; };
+		460403EB2BFCF9E400E34E3B /* NoteDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteDetailViewController.swift; sourceTree = "<group>"; };
+		460403F52BFCFBDC00E34E3B /* NoteCellCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoteCellCollectionViewCell.swift; sourceTree = "<group>"; };
+		460403F62BFCFBDC00E34E3B /* NoteCellCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NoteCellCollectionViewCell.xib; sourceTree = "<group>"; };
 		4679C6EA2BFA4F6A009FCCAF /* Note.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Note.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4679C6ED2BFA4F6A009FCCAF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		4679C6EF2BFA4F6A009FCCAF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -45,6 +53,26 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		460403E72BFCF87000E34E3B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				460403E82BFCF88200E34E3B /* NoteModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		460403EA2BFCF9CB00E34E3B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				4679C7032BFA4FD5009FCCAF /* NoteViewController.swift */,
+				4679C7102BFA575D009FCCAF /* CreateNoteViewController.swift */,
+				460403EB2BFCF9E400E34E3B /* NoteDetailViewController.swift */,
+				460403F52BFCFBDC00E34E3B /* NoteCellCollectionViewCell.swift */,
+				460403F62BFCFBDC00E34E3B /* NoteCellCollectionViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		4679C6E12BFA4F6A009FCCAF = {
 			isa = PBXGroup;
 			children = (
@@ -81,8 +109,8 @@
 		4679C7092BFA5694009FCCAF /* Note  */ = {
 			isa = PBXGroup;
 			children = (
-				4679C7032BFA4FD5009FCCAF /* NoteViewController.swift */,
-				4679C7102BFA575D009FCCAF /* CreateNoteViewController.swift */,
+				460403EA2BFCF9CB00E34E3B /* View */,
+				460403E72BFCF87000E34E3B /* Model */,
 			);
 			path = "Note ";
 			sourceTree = "<group>";
@@ -161,6 +189,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				460403F72BFCFBDC00E34E3B /* NoteCellCollectionViewCell.xib in Resources */,
 				4679C6F72BFA4F6C009FCCAF /* Assets.xcassets in Resources */,
 				4679C6FA2BFA4F6C009FCCAF /* Base in Resources */,
 				4679C6F52BFA4F6A009FCCAF /* Base in Resources */,
@@ -175,6 +204,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				4679C6EE2BFA4F6A009FCCAF /* AppDelegate.swift in Sources */,
+				460403E92BFCF88200E34E3B /* NoteModel.swift in Sources */,
+				460403F82BFCFBDC00E34E3B /* NoteCellCollectionViewCell.swift in Sources */,
+				460403EC2BFCF9E400E34E3B /* NoteDetailViewController.swift in Sources */,
 				4679C7082BFA540F009FCCAF /* TabbarViewController.swift in Sources */,
 				4679C6F02BFA4F6A009FCCAF /* SceneDelegate.swift in Sources */,
 				4679C7052BFA4FD5009FCCAF /* LoginViewController.swift in Sources */,

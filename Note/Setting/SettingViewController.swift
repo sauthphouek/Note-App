@@ -12,7 +12,7 @@ class SettingViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         title = "Setting"
-        view.backgroundColor = .systemGray6
+        view.backgroundColor = .clear
     }
     
 
